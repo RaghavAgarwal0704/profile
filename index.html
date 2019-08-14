@@ -1,0 +1,422 @@
+<!-- <!DOCTYPE html> -->
+<!-- <html> -->
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Red+Hat+Display&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width initial-scale=1.0">
+	<title>Portfolio</title>
+	<style type="text/css">
+		body
+		{
+			margin:0;
+			height:100%;
+			width:100%;
+		}
+		html
+		{
+			/*background-color: #21D4FD;*/
+			/*background: linear-gradient(-135deg, #21D4FD 0%, #B721FF 100%);*/
+			/*/*/*/*/*/*/*/*/*/*background: #E55D87;  /* fallback for old browsers */
+			/*background: -webkit-linear-gradient(to top, #5FC3E4, #E55D87);   Chrome 10-25, Safari 5.1-6 
+			background: linear-gradient(to top, #5FC3E4, #E55D87);*/ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */*/*/*/*/*/*/*/*/*/*/
+			/*background: #CC95C0;  /* fallback for old browsers */
+            /*background: -webkit-linear-gradient(to top, #7AA1D2, #DBD4B4, #CC95C0);*/  /* Chrome 10-25, Safari 5.1-6 */
+           /* background: linear-gradient(to top, #7AA1D2, #DBD4B4, #CC95C0);*/ *//* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+           /*background: #076585;*/  /* fallback for old browsers */
+/*background: -webkit-linear-gradient(to top, #fff, #076585);*/  /* Chrome 10-25, Safari 5.1-6 */
+/*background: linear-gradient(to top, #fff, #076585);*/ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: #5433FF;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #A5FECB, #20BDFF, #5433FF);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #A5FECB, #20BDFF, #5433FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+			background-repeat:no-repeat; 
+			height:auto;
+			background-size:cover;
+			/*min-width:100%;
+			min-height:100%;*/
+		}
+		#head
+		{
+			text-align: center;
+			top:0;
+			position:fixed;
+			color:whitesmoke;
+			background:rgba(255,255,255,0.55);
+			margin:0;
+			width:100%;
+			height:auto;
+			/*padding:3px;*/
+		}
+		h2
+		{
+			font-family: 'Courgette', cursive;
+			margin:0;
+			padding-top:8px;
+			padding-bottom:2px;
+			font-size:40px;
+			/*text-transform: uppercase;*/
+		}
+		.fa 
+		{
+		  padding: 15px;
+		  font-size: 20px;
+		  width: 15px;
+		  height:15px;
+		  border-radius:50%;
+		  text-align: center;
+		  text-decoration: none;
+		  margin: 5px 2px;
+        }
+        .fa:hover 
+        {
+		  opacity: 0.7;
+		}
+
+		.fa-facebook 
+		{
+		  background: #3B5998;
+		  color: white;
+		  margin-right:10px;
+        }
+		.fa-linkedin 
+		{
+		  background: #007bb5;
+		  color: white;
+		  margin-right:10px;
+		}
+		.fa-instagram 
+		{
+  		  background: rgba(225,48,108,0.8);
+  	      color: white;
+  	      margin-right:10px;
+        }
+        .footer 
+		{
+   		   position: fixed;
+   		   margin:0;
+		   bottom: 0;
+		   width: 100%;
+		   color:whitesmoke;
+		   background:rgb(255,255,255,0.8);
+		   float:right;
+		   height:10%;
+		   text-align:center;
+		}
+		img
+		{
+			width:200px;
+			height:200px;
+			border-radius:50%;
+			margin:50px;
+		}
+		.container
+		{
+			margin:1%;
+			width:98%;
+			/*background:rgba(255,255,255,0.1);*/
+			height:74%;
+			margin-top: 75px;
+		}
+		.left
+		{
+			width:25%;
+			height:auto;
+			background:rgba(255,255,255,0.1);
+			margin:0.5%;
+			text-align:center;
+			float:left;
+			margin-bottom:90px;
+		}
+		.right
+		{
+			width:73%;
+			height:auto;
+			background:rgba(255,255,255,0.1);
+			margin:0.5%;
+			text-align:center;
+			float:left;
+			font-size:30px;
+			margin-bottom: 90px;
+		}
+		.social
+		{
+			margin-right: 20px;
+			float:right;
+			margin-top:8px;
+		}
+		.name
+		{
+			color:whitesmoke;
+			text-align:left;
+			font-size:30px;
+			padding-left:60px;
+			font-family: 'Red Hat Display', sans-serif;
+			letter-spacing:0.06em;
+			margin:0;
+		}
+		.title
+		{
+			color:#b300b3;
+			text-align:left;
+			font-size:20px;
+			padding-left:60px;
+			margin-top:15px;
+
+		}
+		.about
+		{
+			color:rgba(255,255,255,0.6);
+			text-align:left;
+			padding-left:60px;
+			padding-right:40px;
+			font-weight:normal;
+		}
+		.profile
+		{
+			color:whitesmoke;
+			text-align:left;
+			padding-left:60px;
+			font-family: 'Red Hat Display', sans-serif;
+			font-size:20px;
+			letter-spacing:0.1em;
+			/*font-weight:200;	*/
+		}
+		.phone-ans
+		{
+			color:whitesmoke;
+			text-align:left;
+			padding-left:60px;
+			font-family: 'Red Hat Display', sans-serif;
+			font-size:15px;
+			/*letter-spacing:0.1em;*/
+		}
+		.detailed
+		{
+			font-size:20px;
+			color:whitesmoke;
+			padding-left: 60px;
+			padding-right: 40px;
+			text-align:left;
+		}
+		.age
+		{
+			width:40px;
+			height:40px;
+			border-radius:50%;
+			float:right;
+			background:red;
+			margin-right:50px;
+			margin-bottom: 100px;
+		}
+		.hobby
+		{
+			color:#b300b3;
+			font-size:15px;
+			border:1px solid transparent;
+			padding:8px;
+			background:rgba(255,255,255,0.9);
+			border-radius:20px;
+			font-family: 'Red Hat Display', sans-serif;
+		}
+		.hobbies
+		{
+			text-align:left;
+			padding-left:60px;
+		}
+		.hobby:hover
+		{
+			background:rgba(255,255,255,0.5);
+		}
+		.line
+		{
+			padding:1px;
+			margin:0 auto;
+			width:5em;
+			border-right:2px solid rgba(255,255,255,0.75);
+			overflow:hidden;
+			white-space:nowrap;
+			color:whitesmoke;
+			/*font-weight:normal;*/
+			font-family: 'Red Hat Display', sans-serif;
+			font-size:20px;
+			letter-spacing:0.1em;
+		}
+		.anim-typewriter
+		{
+			animation: typewriter 1.5s steps(10) 1s infinite normal ,
+			blinkTextCursor 500ms steps(20) infinite normal;
+		}
+		@keyframes typewriter
+		{
+			from
+			{
+				width:0;
+			}
+			to
+			{
+				width:5em;
+			}
+		}
+		@keyframes blinkTextCursor
+		{
+			from
+			{
+				border-right-color: rgba(255,255,255,0.75);
+			}
+			to
+			{
+				border-right-color:transparent;
+			}
+		}
+		.bubble
+		{
+			
+			/*float:left;*/
+			padding-left:30px;
+			float:left;
+			padding-bottom:0;
+		}
+		.fill
+		{
+			/*background:#344feb;*/
+			background:#b300b3;
+			border-radius:50%;
+			width:10px;
+			height:10px;
+			display:inline-block;
+		}
+		.unfill
+		{
+			background:rgba(255,255,255,0.6);
+			border-radius:50%;
+			width:10px;
+			height:10px;
+			display:inline-block;
+		}
+		.lang
+		{
+			padding-left:30px;
+			color:rgba(255,255,255,0.6);
+			font-weight: normal;
+			font-size:15px;
+			text-align:left;
+			font-family: 'Red Hat Display', sans-serif;
+			margin:0;
+			letter-spacing:0.1em;
+		}
+		.inner
+		{
+			margin:0;
+			display:inline-block;
+			padding-left:30px;
+		}
+		.outer
+		{
+			margin:0;
+			float:left;
+		}
+	</style>
+</head>
+<body>
+	<header id="head">
+		<h2>Portfolio</h2>
+	</header>
+	<div class="container">
+		<div class="left">
+			<img src="raghav.png" alt="raghav">
+			<p class="name">
+				Raghav<br>Agarwal
+			</p>
+			<p class="title">
+				web-developer
+			</p>
+			<hr style="width:67%">
+			<h3 class="profile">PROFILE</h3>
+			<p class="about">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<hr style="width:67%">
+			<h3 class="profile">CONTACT</h3>
+			<p class="about">Phone</p>
+			<p class="phone-ans">+91-8791161621</p>
+			<p class="about">E-mail</p>
+			<p class="phone-ans">agarwal.raghav0704@gmail.com</p>
+
+		</div>
+		<div class="right">
+			<h3 class="profile">EDUCATION</h3>
+			<hr style="width:89%">
+			<h3 class="profile">SKILLS</h3>
+			<hr style="width:89%">
+			<h3 class="profile">LANGUAGE PROFICIENCY</h3>
+			<div class="outer">
+				<div class="inner">
+					<p class="lang">python</p>
+					<div class="bubble">
+						<div class="fill"></div>
+						<div class="fill"></div>
+						<div class="fill"></div>
+						<div class="fill"></div>
+						<div class="fill"></div>
+					</div>
+				</div>
+				<div class="inner">
+					<p class="lang">java</p>
+					<div class="bubble">
+						<div class="fill"></div>
+						<div class="fill"></div>
+						<div class="fill"></div>
+						<div class="fill"></div>
+						<div class="unfill"></div>
+					</div>
+				</div>
+				<div class="inner">
+					<p class="lang">c++</p>
+					<div class="bubble">
+						<div class="fill"></div>
+						<div class="fill"></div>
+						<div class="fill"></div>
+						<div class="fill"></div>
+						<div class="unfill"></div>
+					</div>
+				</div>
+				<div class="inner">
+					<p class="lang">c</p>
+					<div class="bubble">
+						<div class="fill"></div>
+						<div class="fill"></div>
+						<div class="fill"></div>
+						<div class="unfill"></div>
+						<div class="unfill"></div>
+					</div>
+				</div>
+			</div>
+			<br><br>
+			<hr style="width:89%"> 
+			<h3 class="profile">WHAT I LIKE</h3>
+			<div class="hobbies">
+				<span class="hobby">SPORTS</span>
+				<span class="hobby">GAMING</span>
+				<span class="hobby">MUSIC</span>
+				<span class="hobby">TRAVELLING</span>
+				<span class="hobby">READING</span>
+			</div>
+			<br>
+			<hr style="width:89%">
+		</div>
+	</div>
+	<div class="footer">
+		<div class="social">
+			<a href="https://www.facebook.com/raghav.agarwal.33046736" class="fa fa-facebook" target="_blank"></a>
+			<a href="https://www.linkedin.com/in/raghav-agarwal-62a303169/" class="fa fa-linkedin" target="_blank"></a>
+			<a href="https://www.instagram.com/raghav_0704/" class="fa fa-instagram" target="_blank"></a>
+        </div>
+    </div>
+</body>
+<!-- </html>
+ -->
